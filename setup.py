@@ -4,7 +4,7 @@ from setuptools import setup
 setup(
     name='rextester_py',
     version='0.0.2',
-    url='https://github.com/nitanmarcel/rextester_py',
+    url='https://github.com/ProgrammingError/rextester_py',
     license='MIT',
     author='nitanmarcel',
     author_email='nitan.marcel@gmail.com',
