@@ -1,5 +1,6 @@
 import aiohttp
 import logging
+import json
 
 from rextester_py.data import languages, compiler_args
 
@@ -32,6 +33,11 @@ async def rexec_aio(lang, code, stdin=None):
                                response.get("Stats"),
                                response.get("Files"))
 
+def get_langs():
+    a = json.dumps(languages)
+    a_dict = json.loads(a)
+    for key in a_dict.keys():
+        print(key, end=", ")
 
 class UnknownLanguage(Exception):
     pass
